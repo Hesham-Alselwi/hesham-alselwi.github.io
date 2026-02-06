@@ -61,7 +61,7 @@ Open5GS internally implements this separation exactly as defined by 3GPP and thi
 
 Please refer to the diagram from Open5gs [website](https://open5gs.org/open5gs/docs/guide/01-quickstart/)
 
-![Open5gs CUPS diagram](./assets/images/Open5GS_CUPS-01.jpg)
+![Open5gs CUPS diagram](../assets/images/Open5GS_CUPS-01.jpg)
 
 
 To install Open5GS please refer to [Quick start](https://open5gs.org/open5gs/docs/guide/01-quickstart/) or [Building Open5GS from Sources](https://open5gs.org/open5gs/docs/guide/02-building-open5gs-from-sources/)
