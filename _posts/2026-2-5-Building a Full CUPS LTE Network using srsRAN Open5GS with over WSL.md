@@ -45,7 +45,7 @@ In 5G Core the function of PGW-C resident in SMF and PGW-U function resident in 
 Because all components run on the same machine, we will use the loopback addressing in order to separate network elements logically.
 
 **Open5GS** 
-|Node	|IP Address|
+|Node|IP Address|
 |--|--|
 |MME	|127.0.0.2|
 |SGWC|127.0.0.3|
@@ -64,13 +64,9 @@ Please refer to the diagram from Open5gs [website](https://open5gs.org/open5gs/d
 ![Open5gs CUPS diagram](../assets/images/Open5GS_CUPS-01.jpg)
 
 
+
 To install Open5GS please refer to [Quick start](https://open5gs.org/open5gs/docs/guide/01-quickstart/) or [Building Open5GS from Sources](https://open5gs.org/open5gs/docs/guide/02-building-open5gs-from-sources/)
 
 
 
- 
 
-
-
-![Open5gs CUPS diagram](
-https://github.com/Hesham-Alselwi/hesham-alselwi.github.io/blob/master/assets/images/Open5GS_CUPS-01.jpg)
