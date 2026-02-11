@@ -387,9 +387,9 @@ sudo tcpdump -i any -w 4g_CUPSLTE_complete.pcap not tcp
 # Troubleshoting 
 Despite the attach success procedure and GTP tunnel,from srsue log on the terminal, we noted that the srsUE couldn't create and configure its tun_srsue interface, because the WSL network stack is shared with Windows virtual networking and the srsUE needs its own namespace in order to be able to configure the tun-srsue.
 /Failed-to-configure-GW.png
-![alt text](/hesham-alselwi.github.io/assets/images/Failed-to-configure-GW.png)
+![alt text](hesham-alselwi.github.io/assets/images/Failed-to-configure-GW.png)
 The profissional solution to fix this problem to give srsUE its own clean Linux network stack by creating separated namespace. 
-![Terminal](https://raw.githubusercontent.com/Hesham-Alselwi/hesham-alselwi.github.io/master/assets/images/Failed-to-configure-GW.png)
+![Terminal](master/assets/images/Failed-to-configure-GW.png)
 ```
 sudo ip netns add ue1
 ```
