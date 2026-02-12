@@ -389,7 +389,8 @@ Despite the attach success procedure and GTP tunnel,from srsue log on the termin
 /Failed-to-configure-GW.png
 ![alt text](hesham-alselwi.github.io/assets/images/Failed-to-configure-GW.png)
 The profissional solution to fix this problem to give srsUE its own clean Linux network stack by creating separated namespace. 
-![Terminal](hesham-alselwi.github.io/assets/images/Failed-to-configure-GW.png)
+![Terminal]([hesham-alselwi.github.io/assets/images/Failed-to-configure-GW.png](https://raw.githubusercontent.com/Hesham-Alselwi/hesham-alselwi.github.io/assets/images/Failed-to-configure-GW.png
+)
 ```
 sudo ip netns add ue1
 ```
