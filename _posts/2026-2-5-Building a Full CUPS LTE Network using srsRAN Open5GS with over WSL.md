@@ -160,6 +160,7 @@ sgwc:
         - address: 127.0.0.6
 ```
 <br>
+
 In ```/etc/open5gs/sgwu.yaml``` file change the configuration of SGW-U as below.
 
 ```
@@ -172,6 +173,7 @@ sgwu:
       - address: 127.0.0.6
 ```
 <br>
+
 In ```/etc/open5gs/smf.yaml``` file change the configuration of SMF as below.
 
 ```
