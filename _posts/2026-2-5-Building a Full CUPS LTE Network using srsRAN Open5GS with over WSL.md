@@ -1,7 +1,6 @@
 
 # Building a Full LTE Network using srsRAN + Open5GS with over WSL (No SDR Required)
 
-<img alt="" src="./assets/images/Failed-to-configure-GW.png" />
 ## Introduction
 This project documents the complete implementation of a fully functional LTE network running entirely on a single laptop without any SDR hardware. The lab combines srsRAN 4G for the radio access network and Open5GS for the EPC core, interconnected through ZeroMQ virtual RF, and deployed inside WSL (Windows Subsystem for Linux).
 
@@ -390,8 +389,7 @@ Despite the attach success procedure and GTP tunnel,from srsue log on the termin
 /Failed-to-configure-GW.png
 ![5gs](../assets/images/Failed-to-configure-GW.png)
 The profissional solution to fix this problem to give srsUE its own clean Linux network stack by creating separated namespace. 
-![Terminal]([hesham-alselwi.github.io/assets/images/Failed-to-configure-GW.png](https://raw.githubusercontent.com/Hesham-Alselwi/hesham-alselwi.github.io/assets/images/Failed-to-configure-GW.png
-)
+
 ```
 sudo ip netns add ue1
 ```
