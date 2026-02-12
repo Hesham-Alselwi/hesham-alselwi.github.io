@@ -372,6 +372,8 @@ If all points are as expected you can run the srsenb first in a terminal and srs
 ```
 sudo srsenb
 ```
+In another terminal:
+
 ```
 sudo srsue
 ```
@@ -387,6 +389,8 @@ Or, it would be better to use PCAP trace tool to check the whole signalling proc
 ```
 sudo tcpdump -i any -w 4g_CUPSLTE_complete.pcap not tcp
 ```
+Also, try testing by executing ```sudo ip netns exec ue1 ping 8.8.8.8```.
+
 # Troubleshoting 
 Despite the attach success procedure and GTP tunnel,from srsue log on the terminal, we noted that the srsUE couldn't create and configure its tun_srsue interface, because the WSL network stack is shared with Windows virtual networking and the srsUE needs its own namespace in order to be able to configure the tun-srsue.
 /Failed-to-configure-GW.png
@@ -423,7 +427,7 @@ If it's running, you get :
 default via 10.45.0.1 dev tun_srsue
 10.45.0.0/16 dev tun_srsue proto kernel scope link src 10.45.0.3
 ```
-After configuring the default route try to ```ping 8.8.8.8``` .
+After configuring the default route try to ```sudo ip netns exec ue1 ping 8.8.8.8``` .
 You
 
 For support and help using srsRAN Project, check out the discussion on [github](https://github.com/srsran/srsRAN_Project/discussions)
