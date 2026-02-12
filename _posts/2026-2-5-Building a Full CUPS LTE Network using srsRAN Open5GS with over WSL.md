@@ -270,7 +270,8 @@ file_max_size = -1
 enable = false
 ``` 
 <br>
-Configure the UE by editing ```/etc/srsran/ue.conf``` file as shown below.
+
+Configure the UE by editing ```/etc/srsran/ue.conf ``` file as shown below.
 
 ```
 # Example for ZMQ-based operation with TCP transport for I/Q samples
