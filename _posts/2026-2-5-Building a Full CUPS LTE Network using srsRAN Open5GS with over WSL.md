@@ -1,6 +1,6 @@
 
 # Building a Full LTE Network using srsRAN + Open5GS with over WSL (No SDR Required)
-![Nan](assets/images/Failed-to-configure-GW.png)
+![Nan](./assets/images/Failed-to-configure-GW.png)
 ## Introduction
 This project documents the complete implementation of a fully functional LTE network running entirely on a single laptop without any SDR hardware. The lab combines srsRAN 4G for the radio access network and Open5GS for the EPC core, interconnected through ZeroMQ virtual RF, and deployed inside WSL (Windows Subsystem for Linux).
 
