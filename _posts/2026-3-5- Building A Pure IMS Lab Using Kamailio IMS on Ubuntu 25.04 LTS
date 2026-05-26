@@ -1,0 +1,37 @@
+
+# Building a Modern Pure IMS Lab Using Kamailio IMS on A Single VM Running Ubuntu 25.04 LTS  (No EPC, No Rx interface)
+
+## Introduction
+In this tutorial we will deploy kamailio IMS on Ubuntu 25.04 LTS, This step-by-step guide to implements a standalone IMS core network conforming to 3GPP standards on a single VM. Unlike traditional mobile network labs that include the Evolved Packet Core (EPC),this configuration focuses exclusively on the IMS service layer, providing Session Initiation Protocol (SIP) based multimedia services and diameter without the dependency on packet core network elements.
+
+The implementation is initially based on the [IMS-Kamailio-Tutorial](https://github.com/anabelen-garcia/IMS-Kamailio-Tutorial#single-vm-ims-setup-with-kamailio-and-fhoss-for-academic-purposes).
+
+## Software Used
+In this tutorial, the software we used listed below along with the function.
+|Software|Function|
+|----|----|
+|[kamailio](https://www.kamailio.org/w/)|P/I/S-CSCF|
+|[RTPengine](https://github.com/sipwise/rtpengine)|Proxy for RTP media|
+|[FHoSS](https://github.com/herlesupreeth/FHoSS)|HSS|
+|[bind9](https://gitlab.isc.org/isc-projects/bind9)|DNS Server|
+|||
+
+## Topology on a Single Host
+Because all components run on the same machine, we will use the loopback addressing in order to separate network elements logically.
+
+|Function|Open5GS Component|Plane|
+|----|----|----|
+|Mobility Management|MME|Control|
+|Subscriber Database|HSS|Control|
+|Session Management (SGW-C)|SGWC|Control|
+|User Data Serving Gateway(SGW-U)|SGWU|User|
+|Session Management (PGW-C)|SMF|Control|
+|User Data Forwarding (PGW-U)|UPF|User|
+|Radio Access|srsENB|Access|
+|UE|srsUE|Access|
+||||
+
+and we will focuse   
+the complete implementation of a fully functional LTE network running entirely on a single laptop without any SDR hardware. The lab combines srsRAN 4G for the radio access network and Open5GS for the EPC core, interconnected through ZeroMQ virtual RF, and deployed inside WSL (Windows Subsystem for Linux).
+
+What makes this lab particularly valuable is that it does not stop at a basic attach demonstration. Instead, it recreates a modern EPC architecture using CUPS (Control and User Plane Separation), the same design principle used in real operator networks today.
